@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goriber Bank</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,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"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div id="login-area">
+        <h1 class="text-center">WELCOME TO GORIBER BANK</h1>
+        <div class="submit-area">
+            <h4>Login</h4>
+            <input type="text" class="form-control" placeholder="Email">
+            <br>
+            <input type="password" class="form-control" name="" id="" placeholder="password">
+            <br>
+            <button id="login" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+
+    <div id="lenden-area">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h1>$ <span id="currentDeposit">00</span> </h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h1>$ <span id="currentWithdraw">00</span></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h1>$ <span id="currentBalance">1240</span></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <input id="depositAmount" type="text" class="form-control"
+                        placeholder="$ amount you want to Deposit">
+                    <br>
+                    <button id="addDeposit" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Withdraw</h4>
+                    <input id="withdrawAmount" type="text" class="form-control"
+                        placeholder="$ amount you want to Withdraw">
+                    <br>
+                    <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        //  login in button
+        const loginBtn = document.getElementById("login");
+        loginBtn.addEventListener("click", function () {
+            const loginArea = document.getElementById("login-area");
+            document.getElementById("login-area").style.display = "none";
+            const lendenArea = document.getElementById("lenden-area");
+            document.getElementById("lenden-area").style.display = "block";
+
+        })
+
+        //    deposit button
+        const depositBtn = document.getElementById("addDeposit");
+        depositBtn.addEventListener("click", function () {
+            const depositNumber = getInputNumber("depositAmount");
+
+
+
+            updateSpanText("currentDeposit", depositNumber);
+            updateSpanText("currentBalance", depositNumber);
+
+            document.getElementById("depositAmount").value = "";
+        })
+        // withdraw button
+        const withdrawBtn = document.getElementById("addWithdraw");
+        withdrawBtn.addEventListener("click", function () {
+            const withdrawAmount = document.getElementById("withdrawAmount").value;
+            const withdrawNumber = getInputNumber("withdrawAmount");
+
+            updateSpanText("currentWithdraw", withdrawNumber);
+            updateSpanText("currentBalance", -1 * withdrawNumber);
+
+            document.getElementById("withdrawAmount").value = "";
+        })
+
+        function getInputNumber(id) {
+            const amount = document.getElementById(id).value;
+            const amountNumber = parseFloat(amount);
+            return amountNumber;
+        }
+
+        function updateSpanText(id, depositNumber) {
+            const current = document.getElementById(id).innerText;
+            const currentNumber = parseFloat(current);
+            const totalAmount = depositNumber + currentNumber;
+            document.getElementById(id).innerText = totalAmount;
+        }
+    </script>
+
+
+</body>
+
+</html>
